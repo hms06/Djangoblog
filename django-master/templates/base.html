@@ -1,0 +1,27 @@
+{% load static %}
+<!doctype html>
+<html lang="ko">
+<head>
+    <title>My blog</title>
+        <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+        <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
+        <link rel="stylesheet" href="{% static 'css/blog.css' %}">
+        <link href="//fonts.googleapis.com/css?family=Raleway&subset=latin,latin-ext" rel="stylesheet" type="text/css">
+</head>
+<body>
+
+
+{% include "navbar.html" %}
+
+{% block content %}
+{% endblock %}
+
+<script src="{% static 'jquery-3.6.0.min.js' %}"></script>
+
+<script src="{% static 'bootstrap.min.js' %}"></script>
+
+{% block script %}
+{% endblock %}
+
+</body>
+</html>
